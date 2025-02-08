@@ -25,4 +25,8 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
   ],
+  cors: {
+    "origin": ["https://shop-co-dashboard-iota.vercel.app", "http://localhost:3000"],
+    "credentials": true
+  },
 })
